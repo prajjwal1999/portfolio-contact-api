@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
+    }
+  ],
+  "env": {
+    "GMAIL_USER": "prajjwal875@gmail.com",
+    "GMAIL_APP_PASSWORD": "kyja kygy bmzp graw",
+    "YOUR_EMAIL": "prajjwal875@gmail.com",
+    "DEFAULT_FROM_EMAIL": "prajjwal875@gmail.com"
+  }
+}

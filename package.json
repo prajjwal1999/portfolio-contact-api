@@ -1,0 +1,37 @@
+{
+  "name": "email-service",
+  "version": "1.0.0",
+  "description": "Free email service API deployed on Firebase Functions",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "setup": "node setup.js",
+    "build": "echo 'No build step required'",
+    "deploy": "firebase deploy --only functions",
+    "serve": "firebase emulators:start --only functions"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^13.4.0",
+    "firebase-functions": "^6.4.0",
+    "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "email",
+    "api",
+    "firebase",
+    "functions",
+    "nodemailer"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
