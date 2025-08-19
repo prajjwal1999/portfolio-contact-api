@@ -13,9 +13,9 @@
     }
   ],
   "env": {
-    "GMAIL_USER": "prajjwal875@gmail.com",
-    "GMAIL_APP_PASSWORD": "kyja kygy bmzp graw",
-    "YOUR_EMAIL": "prajjwal875@gmail.com",
-    "DEFAULT_FROM_EMAIL": "prajjwal875@gmail.com"
+    "GMAIL_USER": "@gmail_user",
+    "GMAIL_APP_PASSWORD": "@gmail_app_password",
+    "YOUR_EMAIL": "@your_email",
+    "DEFAULT_FROM_EMAIL": "@default_from_email"
   }
 }
