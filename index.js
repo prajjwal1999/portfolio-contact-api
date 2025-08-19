@@ -3,6 +3,7 @@ require('dotenv').config();
 
 const express = require('express');
 const cors = require('cors');
+const { injectSpeedInsights } = require('@vercel/speed-insights');
 const emailService = require('./services/emailService');
 
 const app = express();
@@ -12,6 +13,9 @@ app.use(cors({ origin: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
+
+// Speed Insights
+injectSpeedInsights();
 
 // Health check endpoint
 app.get('/', (req, res) => {
